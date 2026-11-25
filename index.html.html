@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رحلة إنشاء موقع إلكتروني</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:#080d19;color:#fff;min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;width:500px;height:500px;background:#1765ff;filter:blur(180px);opacity:.17;top:-200px;right:-150px;z-index:-1}
+.container{width:min(1000px,92%);margin:auto;padding:35px 0}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:50px}
+.logo{font-size:20px;font-weight:900}.logo span{color:#5791ff}
+.tag{border:1px solid #263955;padding:7px 16px;border-radius:30px;color:#9cb8e8;font-size:12px}
+.intro{text-align:center;margin-bottom:35px}
+.intro small{color:#5791ff;font-weight:bold;letter-spacing:1px}
+.intro h1{font-size:clamp(28px,5vw,46px);font-weight:900;margin:12px 0}
+.intro h1 span{color:#5791ff}
+.intro p{color:#9ba9bf;font-size:14px;line-height:2}
+.progress-info{display:flex;justify-content:space-between;color:#aabbd4;font-size:13px;margin-bottom:10px}
+.progress{height:6px;background:#1a2639;border-radius:20px;overflow:hidden;margin-bottom:35px}
+.progress-bar{width:11.11%;height:100%;background:linear-gradient(90deg,#2867ff,#64a4ff);transition:.4s}
+.slide{display:none;background:linear-gradient(145deg,#131e32,#101827);border:1px solid #263852;border-radius:25px;padding:45px;min-height:390px;animation:show .4s ease}
+.slide.active{display:block}
+@keyframes show{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.step-number{color:#5791ff;font-size:13px;font-weight:bold;margin-bottom:15px}
+.icon{font-size:48px;margin-bottom:18px}
+.slide h2{font-size:clamp(23px,4vw,32px);font-weight:900;margin-bottom:15px}
+.description{color:#b0bfd4;line-height:2.2;font-size:15px;margin-bottom:25px}
+.details{background:#0b1424;border:1px solid #253750;border-radius:15px;padding:20px;line-height:2.1}
+.details h3{color:#76a8ff;font-size:15px;margin-bottom:8px}
+.details ul{padding-right:20px;color:#c2cfe1;font-size:14px}
+.details li{margin-bottom:5px}
+.tip{color:#9dbbff;font-size:13px;margin-top:18px;line-height:2}
+.navigation{display:flex;justify-content:space-between;align-items:center;margin-top:25px;gap:12px}
+button{font-family:inherit;border:0;cursor:pointer;padding:13px 28px;border-radius:12px;font-weight:bold;font-size:14px;transition:.3s}
+button:hover{transform:translateY(-2px)}
+.next{background:#3978ff;color:white}.prev{background:#19283e;color:#fff}
+.prev:disabled{opacity:.35;cursor:not-allowed;transform:none}
+.counter{color:#8da5c7;font-size:13px}
+footer{text-align:center;color:#62738d;margin-top:50px;font-size:12px}
+@media(max-width:600px){.container{padding-top:20px}header{margin-bottom:35px}.slide{padding:25px 20px;min-height:430px}button{padding:11px 18px}.navigation{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="container">
+<header><div class="logo">WEB<span> JOURNEY.</span></div><div class="tag">دليل إنشاء المواقع الإلكترونية</div></header>
+<section class="intro"><small>من الفكرة إلى الإطلاق</small><h1>رحلة إنشاء <span>موقعك الإلكتروني</span></h1><p>تعرّف على المراحل الأساسية لبناء موقع إلكتروني احترافي، خطوة بخطوة، حتى يصبح مشروعك متاحاً على الإنترنت.</p></section>
+<div class="progress-info"><span>مستوى الإنجاز</span><span id="percentage">11%</span></div>
+<div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+
+<section class="slide active">
+<div class="step-number">الخطوة 01 / 09</div><div class="icon">💡</div><h2>تحديد هدف المشروع</h2>
+<p class="description">البداية الصحيحة لأي موقع إلكتروني تكون بتحديد الفكرة والهدف الأساسي من إنشائه. يجب أن تعرف ماذا تريد أن يقدم موقعك، ومن هم الأشخاص الذين سيستخدمونه.</p>
+<div class="details"><h3>ماذا تفعل في هذه المرحلة؟</h3><ul><li>تحديد فكرة الموقع وطبيعة المشروع.</li><li>تحديد الجمهور المستهدف.</li><li>تحديد الخدمات أو المنتجات التي سيعرضها الموقع.</li><li>تحديد الصفحات والوظائف المطلوبة.</li></ul></div>
+<p class="tip">✦ نصيحة: كلما كانت الفكرة واضحة، أصبح تنفيذ المشروع أسهل.</p>
+</section>
+
+<section class="slide">
+<div class="step-number">الخطوة 02 / 09</div><div class="icon">📝</div><h2>تجهيز محتوى المشروع والبرومبت</h2>
+<p class="description">بعد تحديد الفكرة، نبدأ بتجهيز المحتوى الذي سيظهر داخل الموقع، ونكتب برومبت واضحاً يشرح تفاصيل المشروع ومتطلباته للحصول على نتيجة مناسبة عند استخدام أدوات الذكاء الاصطناعي.</p>
+<div class="details"><h3>ماذا تجهز؟</h3><ul><li>اسم المشروع ووصفه.</li><li>النصوص والعناوين الرئيسية.</li><li>الصور والشعار والألوان.</li><li>برومبت يوضح التصميم والأقسام والوظائف المطلوبة.</li></ul></div>
+<p class="tip">✦ نصيحة: اكتب تفاصيل دقيقة بدلاً من طلب عام مثل: أنشئ لي موقعاً.</p>
+</section>
+
+<section class="slide">
+<div class="step-number">الخطوة 03 / 09</div><div class="icon">📁</div><h2>إنشاء مستودع المشروع</h2>
+<p class="description">المستودع هو المكان الذي نحفظ فيه ملفات وأكواد المشروع، ويمكننا من خلاله متابعة التعديلات وإدارة الإصدارات.</p>
+<div class="details"><h3>خطوات التنفيذ:</h3><ul><li>الدخول إلى منصة GitHub.</li><li>إنشاء حساب أو تسجيل الدخول.</li><li>الضغط على New Repository.</li><li>كتابة اسم المستودع.</li><li>اختيار Public أو Private ثم إنشاء المستودع.</li></ul></div>
+<p class="tip">✦ نصيحة: اختر اسماً واضحاً يعبر عن مشروعك.</p>
+</section>
+
+<section class="slide">
+<div class="step-number">الخطوة 04 / 09</div><div class="icon">💻</div><h2>تجهيز ملفات موقع المشروع</h2>
+<p class="description">في هذه المرحلة يتم تحويل الفكرة والمحتوى إلى ملفات برمجية حقيقية، وتصميم صفحات الموقع وتجهيز جميع العناصر اللازمة لعمله.</p>
+<div class="details"><h3>أهم ملفات المشروع:</h3><ul><li>index.html : الهيكل الأساسي للموقع.</li><li>style.css : تنسيق وتصميم الصفحات.</li><li>script.js : إضافة التفاعلات والوظائف.</li><li>assets : حفظ الصور والأيقونات والملفات.</li></ul></div>
+<p class="tip">✦ نصيحة: اختبر الموقع وتأكد من عمله قبل رفع الملفات.</p>
+</section>
+
+<section class="slide">
+<div class="step-number">الخطوة 05 / 09</div><div class="icon">📤</div><h2>رفع ملفات المشروع على المستودع</h2>
+<p class="description">بعد الانتهاء من تجهيز الملفات، نقوم برفعها إلى مستودع GitHub حتى تصبح محفوظة على الإنترنت وجاهزة للربط مع منصة الاستضافة.</p>
+<div class="details"><h3>خطوات التنفيذ:</h3><ul><li>فتح المستودع الذي أنشأناه.</li><li>اختيار Add file.</li><li>الضغط على Upload files.</li><li>سحب ملفات المشروع وإضافتها.</li><li>الضغط على Commit changes.</li></ul></div>
+<p class="tip">✦ نصيحة: تأكد من وجود ملف index.html في المكان الصحيح.</p>
+</section>
+
+<section class="slide">
+<div class="step-number">الخطوة 06 / 09</div><div class="icon">🔗</div><h2>ربط المستودع بحساب الاستضافة</h2>
+<p class="description">نربط مستودع GitHub بمنصة استضافة حتى تتمكن المنصة من قراءة ملفات المشروع وتجهيز الموقع للنشر بشكل تلقائي.</p>
+<div class="details"><h3>خطوات التنفيذ:</h3><ul><li>الدخول إلى منصة Cloudflare Pages أو منصة استضافة مناسبة.</li><li>تسجيل الدخول إلى حساب الاستضافة.</li><li>اختيار إنشاء مشروع جديد.</li><li>ربط حساب GitHub.</li><li>اختيار مستودع المشروع.</li><li>ضبط إعدادات البناء حسب نوع المشروع.</li></ul></div>
+<p class="tip">✦ نصيحة: اختر إعدادات الاستضافة المناسبة للتقنيات المستخدمة.</p>
+</section>
+
+<section class="slide">
+<div class="step-number">الخطوة 07 / 09</div><div class="icon">🚀</div><h2>نشر المشروع</h2>
+<p class="description">بعد ربط المستودع بالاستضافة والتأكد من الإعدادات، نبدأ عملية النشر ليصبح الموقع متاحاً عبر رابط إلكتروني يمكن فتحه من أي مكان.</p>
+<div class="details"><h3>خطوات التنفيذ:</h3><ul><li>مراجعة إعدادات المشروع.</li><li>الضغط على Deploy.</li><li>انتظار انتهاء عملية النشر.</li><li>فتح رابط الموقع التجريبي.</li><li>التأكد من أن جميع الصفحات تعمل بشكل صحيح.</li></ul></div>
+<p class="tip">✦ نصيحة: افحص الموقع على الهاتف والكمبيوتر قبل الإطلاق.</p>
+</section>
+
+<section class="slide">
+<div class="step-number">الخطوة 08 / 09</div><div class="icon">🌐</div><h2>حجز الدومين</h2>
+<p class="description">الدومين هو اسم الموقع الذي يكتبه الزائر في المتصفح للوصول إلى موقعك، مثل example.com. اختيار اسم مناسب يساعد على بناء هوية رقمية للمشروع.</p>
+<div class="details"><h3>خطوات التنفيذ:</h3><ul><li>اختيار اسم مناسب وسهل التذكر.</li><li>البحث عن توفر اسم النطاق.</li><li>اختيار امتداد مناسب مثل .com أو .net.</li><li>إتمام عملية التسجيل لدى جهة تسجيل نطاقات معتمدة.</li><li>الاحتفاظ ببيانات إدارة الدومين.</li></ul></div>
+<p class="tip">✦ نصيحة: اختر اسماً قصيراً وسهل الكتابة والنطق.</p>
+</section>
+
+<section class="slide">
+<div class="step-number">الخطوة 09 / 09</div><div class="icon">🎉</div><h2>ربط الدومين بالموقع</h2>
+<p class="description">آخر خطوة هي ربط اسم النطاق الذي حجزناه بمنصة الاستضافة، حتى يتمكن الزوار من الدخول إلى الموقع باستخدام اسم الدومين الخاص بنا.</p>
+<div class="details"><h3>خطوات التنفيذ:</h3><ul><li>الدخول إلى إعدادات المشروع في منصة الاستضافة.</li><li>اختيار Custom Domains.</li><li>إضافة اسم الدومين.</li><li>ضبط سجلات DNS المطلوبة لدى مزود النطاق.</li><li>انتظار التحقق وانتشار إعدادات DNS.</li><li>التأكد من عمل شهادة HTTPS.</li></ul></div>
+<p class="tip">✦ مبروك! أصبح مشروعك جاهزاً للظهور على الإنترنت.</p>
+</section>
+
+<div class="navigation">
+<button class="prev" id="prev" onclick="changeSlide(-1)" disabled>← السابق</button>
+<span class="counter" id="counter">1 من 9</span>
+<button class="next" id="next" onclick="changeSlide(1)">التالي ←</button>
+</div>
+<footer>رحلة إنشاء المواقع الإلكترونية | من الفكرة إلى الإطلاق</footer>
+</div>
+<script>
+const slides=document.querySelectorAll('.slide');
+let current=0;
+const progressBar=document.getElementById('progressBar');
+const percentage=document.getElementById('percentage');
+const counter=document.getElementById('counter');
+const prev=document.getElementById('prev');
+const next=document.getElementById('next');
+function showSlide(index){
+ slides.forEach(slide=>slide.classList.remove('active'));
+ slides[index].classList.add('active');
+ const progress=((index+1)/slides.length)*100;
+ progressBar.style.width=progress+'%';
+ percentage.textContent=Math.round(progress)+'%';
+ counter.textContent=(index+1)+' من '+slides.length;
+ prev.disabled=index===0;
+ next.textContent=index===slides.length-1?'إعادة الرحلة ↻':'التالي ←';
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+function changeSlide(direction){
+ if(current===slides.length-1&&direction===1){current=0;}
+ else{current=Math.max(0,Math.min(slides.length-1,current+direction));}
+ showSlide(current);
+}
+document.addEventListener('keydown',event=>{
+ if(event.key==='ArrowLeft')changeSlide(1);
+ if(event.key==='ArrowRight')changeSlide(-1);
+});
+showSlide(current);
+</script>
+</body>
+</html>
